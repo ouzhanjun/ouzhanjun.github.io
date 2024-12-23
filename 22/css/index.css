@@ -105,7 +105,8 @@
       	position: absolute;
       	border: 1px dashed #00ff00;
       	z-index: 1;
-      	width: 170px
+      	width: 170px;
+		
       }
 
       .line::before {
@@ -153,16 +154,6 @@
       }
 
       @keyframes arrowTransition {
-      	0% {
-      		transform: rotate(0deg)translate(150px)rotate(180deg);
-      	}
-
-      	100% {
-      		transform: rotate(0deg)translate(0px)rotate(180deg);
-      	}
-      }
-
-      @keyframes lines {
       	0% {
       		transform: rotate(0deg)translate(150px)rotate(180deg);
       	}
