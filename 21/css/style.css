@@ -58,44 +58,35 @@ body {
   font-style: italic;
 }
 
+/* 导航栏样式 */
 .main-navigation {
-  margin-top: 20px;
+    text-align: center;
+    padding: 20px 0;
 }
 
 .main-navigation ul {
-  list-style-type: none;
-  display: flex;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-link {
-  color: white;
-  text-decoration: none;
-  margin-right: 30px;
-  font-size: 18px;
-  position: relative;
-  transition: color 0.3s ease;
+.main-navigation li {
+    margin: 0 15px;
 }
 
-.nav-link::before {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: transparent; /* 初始为透明下划线 */
-  transform-origin: left;
-  transform: scaleX(0); /* 初始宽度为0 */
-  transition: transform 0.3s ease, background-color 0.3s ease;
+.main-navigation .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+    padding: 5px 10px;
 }
 
-.nav-link:hover {
-  color: #ccc;
-}
-
-.nav-link:hover::before {
-  transform: scaleX(1); /* 鼠标悬停时下划线展开 */
-  background-color: #ccc; /* 下划线变为灰色 */
+.main-navigation .nav-link:hover {
+    color: #00ffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 /* 主体内容区域样式 */
